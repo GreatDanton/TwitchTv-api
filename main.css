@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #333;
+  background: #fafafa;
+}
+
+.app {
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 200px;
+  margin: 50px auto;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  background: #fff;
+  padding: 20px 0;
+}
+
+.mainImg {
+  max-width: 100%;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.tab {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  min-width: 120px;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  line-height: 20px;
+  color: #666666;
+  transition: 0.3s ease;
+}
+
+
+.tab:hover {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+.active {
+  border-bottom: 2px solid #000;
+  color: #000;
+  background: #fff;
+}
+
+.arrow {
+}
+
+.arrow:before {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-color: #000 transparent transparent transparent;
+  border-width: 15px;
+  border-style: solid;
+  display: block;
+  content: "";
+}
+
+.arrow:after {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-color: #fff transparent transparent transparent;
+  border-width: 18px;
+  border-style: solid;
+  display: block;
+  content: "";
+}
+
+.none {
+  display: none;
+}
+
+.search-bar {
+  margin-top: 20px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  min-height: 30px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  transition: 0.5s ease-in-out;
+}
+
+input:focus {
+  box-shadow: 0 0 15px #ccc;
+}
+
+.people {
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 15px 0px 15px;
+}
+
+.streamer {
+  display: flex;
+  margin: 5px 5px;
+  background: #fff;
+  min-height: 50px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  transition: 0.4s ease;
+}
+
+.streamer:hover {
+  border: 1px solid #333;
+}
+
+.people a {
+  color: #333;
+  text-decoration: none;
+}
+
+.image {
+  margin: 0 20px 0 0;
+  min-width: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.middle-container {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.name {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  flex-grow: 2;
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+
+.state {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.centered {
+  text-align: center;
+  padding: 20px;
+}
